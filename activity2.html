@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Activity 2 - Biomass System</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="chatbot.css">
+  <script src="timer.js"></script>
+</head>
+<body>
+  <div class="sidebar">
+    <img src="images/IMG_20250706_141733.jpg" alt="SUMANTH R">
+    <h2 style="color: azure;">SUMANTH R</h2>
+    <p>RA2311026010861</p>
+    <p><strong>Clean and Green Energy</strong><br>21EEO307T</p>
+    <p><em>Faculty:Dr.J.Divya Navamani</em></p>
+    <img src="images/srm_logo.png" class="logo" alt="SRM Logo">
+    <a href="index.html">🏠 Home</a>
+    <a href="activity1.html">🌊 Activity 1</a>
+    <a href="activity2.html">🌾 Activity 2</a>
+    <a href="activity3.html">🌋 Activity 3</a>
+  </div>
+
+  <div class="timer">
+    Time spent: <span id="timer">00:00:00</span>
+    <div class="timer-controls">
+      <button id="startTimer" class="timer-btn">Start</button>
+      <button id="stopTimer" class="timer-btn">Stop</button>
+      <button id="resetTimer" class="timer-btn">Reset</button>
+    </div>
+  </div>
+
+  <div class="content">
+    <h2>Activity 2: Biomass-Based Biogas Generation System</h2>
+    <div class="diagram">
+      <img src="images/biomass_system.jpg" alt="Biogas System Diagram">
+    </div>
+    <p>
+        Biogas production is a sustainable method of converting organic waste into renewable energy through anaerobic digestion. The diagram shows the working of a <b>biogas plant</b> designed for a dairy farm handling cattle waste. Organic waste, such as dung and slurry, is fed into a <b>mixing pit</b> and then sent into <b>digester tanks</b> where bacteria decompose the biomass in the absence of oxygen, producing a mixture of methane (CH₄) and carbon dioxide (CO₂).
+    </p>
+        
+    <p>
+        <b>Working Process:</b> The produced biogas is collected at the top of the digester and can be used for electricity generation, heating, or cooking. The remaining slurry, called <b>fermentation residue</b>, serves as a nutrient-rich fertilizer. Heat exchangers maintain optimal temperatures inside the digester to ensure efficient microbial activity.
+    </p>
+        
+    <p>
+        <b>Advantages:</b> Reduces dependence on fossil fuels, converts waste to energy, provides organic fertilizer, and reduces greenhouse gas emissions. <br>
+        <b>Disadvantages:</b> Requires constant feedstock supply, moderate setup costs, and proper temperature control for efficiency.
+    </p>
+        
+    <p>
+        <b>Site Selection Criteria:</b> Availability of biomass (animal dung, agricultural residues, food waste), water, and suitable land. Proximity to power distribution or consumption points enhances viability.
+    </p>
+        
+    <p>
+        <b>Applications:</b> Biogas plants are widely used in rural areas for household energy, electricity generation for farms, and powering small industries. Large-scale systems contribute to municipal waste management and decentralized power generation.
+    </p>
+    <h3>Challenging Questions & Answers</h3>
+<ul>
+  <li>
+    <b>Q1:</b> What parameters most significantly affect methane yield during anaerobic digestion?<br>
+    <b>A1:</b> Temperature, pH (optimal 6.8–7.5), C/N ratio (ideal 25–30:1), and retention time strongly influence methane yield. Maintaining mesophilic (35–37°C) conditions ensures stable gas production.
+  </li>
+  <li>
+    <b>Q2:</b> How does the carbon-to-nitrogen ratio affect efficiency?<br>
+    <b>A2:</b> An imbalanced C/N ratio leads to process inhibition—too much carbon slows digestion, while excess nitrogen causes ammonia toxicity. Proper feedstock mixing maintains equilibrium for optimal microbial activity.
+  </li>
+  <li>
+    <b>Q3:</b> What are the challenges in scaling biogas systems to community levels?<br>
+    <b>A3:</b> Issues include high setup cost, irregular feedstock supply, and maintenance challenges. Community-level management, feedstock collection logistics, and government support can overcome these.
+  </li>
+  <li>
+    <b>Q4:</b> How can slurry byproduct improve agriculture?<br>
+    <b>A4:</b> The digested slurry is rich in nitrogen, phosphorus, and potassium, enhancing soil fertility. It also reduces dependence on chemical fertilizers and improves crop yield sustainably.
+  </li>
+  <li>
+    <b>Q5:</b> What innovations can improve gas purification and compression?<br>
+    <b>A5:</b> Advanced scrubbing with zeolites or membranes, pressure swing adsorption, and compact gas storage systems can make purified biogas (bio-CNG) more efficient and economical.
+  </li>
+</ul>
+         
+    <footer>Activity 2 | Clean and Green Energy | SRM Institute of Science and Technology</footer>
+  </div>
+  <!-- Chatbot -->
+  <div class="chat-wrapper">
+    <div class="chat-bot-tooltip">Chat Assistant</div>
+    <div class="chat-bot-icon">
+      <img src="images/chat-icon.png" alt="Chat">
+    </div>
+
+    <div class="chat-container">
+      <div class="chat-header">
+        Activity 2 Assistant
+      </div>
+      <div class="chat-body">
+        <!-- Messages will appear here -->
+      </div>
+      <div class="chat-input">
+        <input type="text" placeholder="Type your question...">
+        <button>Send</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="chatbot_fixed.js"></script>
+</body>
+</html>

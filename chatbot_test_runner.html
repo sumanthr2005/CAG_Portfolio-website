@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Chatbot Test Runner</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    pre { background:#f4f4f4; padding:10px }
+    .ok { color: green }
+    .warn { color: orange }
+  </style>
+</head>
+<body>
+  <h1>Chatbot Test Runner</h1>
+  <p>This page runs a set of sample questions through the chatbot implementation and shows the responses. Open it in your browser (double-click <code>chatbot_test_runner.html</code>), and make sure <code>chatbot.js</code> is in the same folder.</p>
+
+  <div id="results"></div>
+
+  <script src="chatbot.js"></script>
+  <script>
+    // Wait a moment for DOM wiring inside chatbot.js
+    setTimeout(() => {
+      const bot = new SimpleBot();
+      const resultsEl = document.getElementById('results');
+
+      const tests = {
+        activity1: [
+          // Basic concepts
+          'What is tidal energy?',
+          'How does tidal energy work?',
+          'What causes tides?',
+          // Technical details
+          'What is a tidal fence?',
+          'What is a bulb turbine?',
+          'What is a Kaplan turbine?',
+          // Environmental and practical aspects
+          'What are the environmental impacts of tidal energy?',
+          'How to maintain tidal turbines?',
+          'What is tidal range?',
+          // Advanced concepts
+          'What is spring tide?',
+          'What is neap tide?',
+          'What are tidal arrays?'
+        ],
+        activity2: [
+          // Basic concepts
+          'What is biomass energy?',
+          'How does biomass energy work?',
+          'What is the carbon cycle in biomass?',
+          // Technical processes
+          'What is gasification?',
+          'What is torrefaction?',
+          'What is pyrolysis?',
+          // Practical aspects
+          'What is biomass preprocessing?',
+          'How are pellets produced?',
+          'What is LHV and HHV?',
+          // Advanced applications
+          'What is biochemical conversion?',
+          'How is syngas used?',
+          'What is biochar used for?'
+        ],
+        activity3: [
+          // Basic concepts
+          'What is geothermal energy?',
+          'How does geothermal power work?',
+          'What is the geothermal gradient?',
+          // Technical systems
+          'What is binary cycle power plant?',
+          'What is EGS?',
+          'What are geothermal heat exchangers?',
+          // Operational aspects
+          'What is scaling and corrosion?',
+          'What is reinjection?',
+          'What is induced seismicity?',
+          // Applications
+          'What is district heating?',
+          'What are exploration methods?',
+          'What is cascaded use?'
+        ]
+      };
+
+      for (let activity in tests) {
+        const h = document.createElement('h2');
+        h.textContent = activity;
+        resultsEl.appendChild(h);
+
+        for (let q of tests[activity]) {
+          const qEl = document.createElement('div');
+          qEl.innerHTML = `<strong>Q:</strong> ${q}`;
+          resultsEl.appendChild(qEl);
+
+          const a = bot.getResponse(q, activity);
+          const aEl = document.createElement('div');
+          aEl.innerHTML = `<strong>A:</strong> ${a}`;
+          aEl.style.marginBottom = '1em';
+          resultsEl.appendChild(aEl);
+        }
+      }
+
+      const done = document.createElement('p');
+      done.innerHTML = '<em>Manual verification: compare answers above to expected answers in <code>chatbot_test_questions.md</code>.</em>';
+      resultsEl.appendChild(done);
+    }, 300);
+  </script>
+</body>
+</html>

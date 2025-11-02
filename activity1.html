@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Activity 1 - Tidal/Wave/Wind System</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="chatbot.css">
+  <script src="timer.js"></script>
+</head>
+<body>
+  <div class="sidebar">
+    <img src="images/IMG_20250706_141733.jpg" alt="SUMANTH R">
+    <h2 style="color: azure;">SUMANTH R</h2>
+    <p>RA2311026010861</p>
+    <p><strong>Clean and Green Energy</strong><br>21EEO307T</p>
+    <p><em>Faculty: Dr.J.Divya Navamani</em></p>
+    <img src="images/srm_logo.png" class="logo" alt="SRM Logo">
+    <a href="index.html">🏠 Home</a>
+    <a href="activity1.html">🌊 Activity 1</a>
+    <a href="activity2.html">🌾 Activity 2</a>
+    <a href="activity3.html">🌋 Activity 3</a>
+  </div>
+
+  <div class="timer">
+    Time spent: <span id="timer">00:00:00</span>
+    <div class="timer-controls">
+      <button id="startTimer" class="timer-btn">Start</button>
+      <button id="stopTimer" class="timer-btn">Stop</button>
+      <button id="resetTimer" class="timer-btn">Reset</button>
+    </div>
+  </div>
+
+  <div class="content">
+    <h2>Activity 1: Tidal Energy Conversion System</h2>
+    <div class="diagram">
+      <img src="images/tidal_system.jpg" alt="Tidal or Wave Energy Diagram">
+    </div>
+    <p>
+Tidal energy is a renewable source harnessed from the periodic rise and fall of ocean tides caused by the gravitational interaction between the Earth, Moon, and Sun. The image above depicts a typical <b>tidal barrage system</b>, where a dam (barrage) is constructed across an estuary or tidal basin. During high tide, sluice gates allow seawater to enter the basin, and when the tide recedes, the stored water is released through turbines to generate electricity. The turbines can work in both directions—during inflow and outflow—improving overall efficiency.
+</p>
+
+<p>
+<b>Working Principle:</b> The potential energy difference between high and low tides drives the turbines. The kinetic energy of the moving water is converted into mechanical energy by the turbine and then into electrical energy through a generator. The process is entirely clean and emits no greenhouse gases.
+</p>
+
+<p>
+<b>Advantages:</b> Predictable energy generation, zero fuel cost, and long operational life. <br>
+<b>Disadvantages:</b> High initial construction cost, environmental impact on marine ecosystems, and location dependency.
+</p>
+
+<p>
+<b>Site Selection Criteria:</b> Sites with a high tidal range (at least 5 meters), narrow estuaries, and minimal environmental disturbance are ideal. Examples include the Rance Estuary (France) and Sihwa Lake (South Korea).
+</p>
+
+<p>
+<b>Applications:</b> Powering coastal communities, desalination plants, and supporting hybrid renewable energy systems. Tidal energy contributes to sustainable coastal electrification by providing consistent and renewable power.
+</p>
+<h3>Challenging Questions & Answers</h3>
+<ul>
+  <li>
+    <b>Q1:</b> How can tidal power plants be designed to minimize ecological impact on marine habitats and aquatic life?<br>
+    <b>A1:</b> Using fish-friendly turbine blades, slower rotational speeds, and adjustable sluice gates can reduce harm to aquatic life. Installing sediment bypass channels and periodic environmental monitoring also minimizes habitat disruption.
+  </li>
+  <li>
+    <b>Q2:</b> What are the key challenges in synchronizing tidal power generation with the existing electrical grid?<br>
+    <b>A2:</b> Tidal generation is intermittent, occurring in predictable but non-continuous cycles. Energy storage systems like pumped hydro or batteries can balance power delivery and grid stability.
+  </li>
+  <li>
+    <b>Q3:</b> How do tidal barrage systems compare with tidal stream generators?<br>
+    <b>A3:</b> Barrage systems generate more power but impact ecosystems more, whereas tidal stream turbines are modular, easier to install, and more environmentally friendly but produce less energy per unit.
+  </li>
+  <li>
+    <b>Q4:</b> What materials or turbine designs could improve energy capture efficiency in low-velocity tidal regions?<br>
+    <b>A4:</b> Composite blades, variable-pitch turbines, and cross-flow designs can increase efficiency. Materials resistant to corrosion like composites or treated steel are essential for marine durability.
+  </li>
+  <li>
+    <b>Q5:</b> How can predictive models of tidal behavior enhance energy forecasting and storage management?<br>
+    <b>A5:</b> Machine learning and hydrodynamic simulations can predict tide cycles with high accuracy, enabling optimized energy storage scheduling and demand-side management.
+  </li>
+</ul>
+
+    <footer>Activity 1 | Clean and Green Energy | SRM Institute of Science and Technology</footer>
+  </div>
+  <!-- Chatbot -->
+  <div class="chat-wrapper">
+    <div class="chat-bot-tooltip">Chat Assistant</div>
+    <div class="chat-bot-icon">
+      <img src="images/chat-icon.png" alt="Chat">
+    </div>
+
+    <div class="chat-container">
+      <div class="chat-header">
+        Activity 1 Assistant
+      </div>
+      <div class="chat-body">
+        <!-- Messages will appear here -->
+      </div>
+      <div class="chat-input">
+        <input type="text" placeholder="Type your question...">
+        <button>Send</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="chatbot_fixed.js"></script>
+</body>
+</html>

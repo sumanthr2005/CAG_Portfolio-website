@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Activity 3 - Geothermal System</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="chatbot.css">
+  <script src="timer.js"></script>
+</head>
+<body>
+  <div class="sidebar">
+    <img src="images/IMG_20250706_141733.jpg" alt="SUMANTH R">
+    <h2 style="color: azure;">SUMANTH R</h2>
+    <p>RA2311026010861</p>
+    <p><strong>Clean and Green Energy</strong><br>21EEO307T</p>
+    <p><em>Faculty:Dr.J.Divya Navamani</em></p>
+    <img src="images/srm_logo.png" class="logo" alt="SRM Logo">
+    <a href="index.html">🏠 Home</a>
+    <a href="activity1.html">🌊 Activity 1</a>
+    <a href="activity2.html">🌾 Activity 2</a>
+    <a href="activity3.html">🌋 Activity 3</a>
+  </div>
+
+  <div class="timer">
+    Time spent: <span id="timer">00:00:00</span>
+    <div class="timer-controls">
+      <button id="startTimer" class="timer-btn">Start</button>
+      <button id="stopTimer" class="timer-btn">Stop</button>
+      <button id="resetTimer" class="timer-btn">Reset</button>
+    </div>
+  </div>
+
+  <div class="content">
+    <h2>Activity 3: OTEC Power System</h2>
+    <div class="diagram">
+      <img src="images/otec_system.jpg" alt="Geothermal or OTEC Diagram">
+    </div>
+    <p>
+        Ocean Thermal Energy Conversion (OTEC) utilizes the temperature difference between warm surface seawater and cold deep seawater to generate electricity. The provided diagram represents a <b>closed-cycle OTEC system</b>, where a working fluid such as ammonia circulates within a sealed system. Warm seawater evaporates the fluid in an <b>evaporator</b>, the vapor drives a <b>turbine-generator</b> to produce electricity, and then cold deep seawater condenses the vapor back into liquid form, completing the cycle.
+    </p>
+        
+        <p>
+        <b>Working Principle:</b> The continuous cycle of evaporation and condensation based on the ocean’s thermal gradient ensures steady power generation. The minimum temperature difference required is about 20°C between the surface and deep seawater layers.
+        </p>
+        
+        <p>
+        <b>Advantages:</b> Continuous 24/7 operation, renewable and clean energy source, and potential for combined freshwater and hydrogen production. <br>
+        <b>Disadvantages:</b> High capital cost, complex underwater infrastructure, and location constraints (requires tropical regions with stable temperature gradients).
+        </p>
+        
+        <p>
+        <b>Site Selection Criteria:</b> Best suited for tropical coastal regions where surface water temperatures are around 25–30°C and deep-water temperatures are about 5°C. Examples include areas near Hawaii, India, and the Caribbean.
+        </p>
+        
+        <p>
+        <b>Applications:</b> Apart from electricity generation, OTEC systems can provide <b>desalinated freshwater</b>, <b>cold seawater air-conditioning (SWAC)</b>, and support aquaculture. It holds promise for sustainable island and coastal community development.
+        </p>
+        <h3>Challenging Questions & Answers</h3>
+    <ul>
+        <li>
+          <b>Q1:</b> What are the main thermodynamic limitations in achieving high efficiency in OTEC systems?<br>
+          <b>A1:</b> Since the temperature difference is small (typically 20°C), the Carnot efficiency is limited to about 6–7%. This requires large working fluid volumes and heat exchangers to maintain viable output.
+        </li>
+        <li>
+          <b>Q2:</b> How can deep seawater pipe designs be optimized?<br>
+          <b>A2:</b> Lightweight composite pipes with flexible joints and optimized hydrodynamic shape reduce frictional losses and structural stress, improving cold-water delivery efficiency.
+        </li>
+        <li>
+          <b>Q3:</b> What factors influence the selection of working fluids in closed-cycle OTEC systems?<br>
+          <b>A3:</b> Fluids are chosen based on boiling point, thermal stability, environmental impact, and availability. Ammonia and R-134a are common choices due to low boiling temperatures and efficiency.
+        </li>
+        <li>
+          <b>Q4:</b> How can OTEC systems be hybridized for higher viability?<br>
+          <b>A4:</b> By coupling with desalination plants, aquaculture cooling systems, or hydrogen production units, OTEC can provide multiple outputs—electricity, freshwater, and cooling—enhancing overall efficiency.
+        </li>
+        <li>
+          <b>Q5:</b> What are the long-term environmental impacts of large-scale OTEC deployment?<br>
+          <b>A5:</b> While generally low, possible impacts include changes in local marine temperature and nutrient mixing. Careful outflow management and environmental monitoring minimize these risks.
+        </li>
+      </ul>  
+        
+    <footer>Activity 3 | Clean and Green Energy | SRM Institute of Science and Technology</footer>
+  </div>
+  <!-- Chatbot -->
+  <div class="chat-wrapper">
+    <div class="chat-bot-tooltip">Chat Assistant</div>
+    <div class="chat-bot-icon">
+      <img src="images/chat-icon.png" alt="Chat">
+    </div>
+
+    <div class="chat-container">
+      <div class="chat-header">
+        Activity 3 Assistant
+      </div>
+      <div class="chat-body">
+        <!-- Messages will appear here -->
+      </div>
+      <div class="chat-input">
+        <input type="text" placeholder="Type your question...">
+        <button>Send</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="chatbot_fixed.js"></script>
+</body>
+</html>

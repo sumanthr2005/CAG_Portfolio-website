@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f9ff;
+  color: #333;
+  display: flex;
+}
+
+.sidebar {
+  width: 260px;
+  background: linear-gradient(180deg, #005f73, #0a9396);
+  color: white;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  box-shadow: 2px 0 6px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.sidebar .logo {
+  width: 90px;
+  height: auto;
+  margin-top: 10px;
+}
+
+.sidebar h2 {
+  font-size: 18px;
+  margin: 8px 0 4px 0;
+  text-align: center;
+}
+
+.sidebar p {
+  font-size: 13px;
+  margin: 2px 20px;
+  text-align: center;
+}
+
+.timer {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #005f73;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.timer span {
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.timer-controls {
+  display: flex;
+  gap: 8px;
+}
+
+.timer-btn {
+  background-color: #0a9396;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.timer-btn:hover {
+  background-color: #94d2bd;
+}
+
+.timer-btn:disabled {
+  background-color: #6b7280;
+  cursor: not-allowed;
+}
+
+.sidebar a {
+  margin-top: 15px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  width: 80%;
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+  transition: background 0.3s;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar a:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.content {
+  margin-left: 260px;
+  padding: 30px;
+  flex: 1;
+}
+
+h1, h2 {
+  color: #0077b6;
+}
+
+.diagram {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.diagram img {
+  width: 80%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+  font-size: 14px;
+  color: #777;
+  border-top: 1px solid #ddd;
+}
